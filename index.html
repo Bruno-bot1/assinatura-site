@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Pizzas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Bella Napoli</h1>
+        <p>Assine e receba pizzas deliciosas todo mês!</p>
+    </header>
+
+    <section class="subscription-form">
+        <h2>Assine Agora</h2>
+        <form id="pizzaForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="plan">Escolha seu plano:</label>
+            <select id="plan" name="plan" required>
+                <option value="basic">Básico - 1 pizza/mês</option>
+                <option value="premium">Premium - 3 pizzas/mês</option>
+                <option value="vip">VIP - Pizza ilimitada!</option>
+            </select>
+
+            <button type="submit">Confirmar Assinatura</button>
+        </form>
+        <div id="confirmation"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Bella Napoli - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
